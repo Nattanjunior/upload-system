@@ -8,5 +8,5 @@ const supabase = createClient(
 
 export const SupaBaseProvider = {
   provide: 'SUPABASE_PROVIDER',
-  userValue: supabase,
+  useValue: supabase,
 }
