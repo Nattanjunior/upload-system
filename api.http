@@ -1,0 +1,30 @@
+### Exemplo de upload de áudio (sucesso)
+POST http://localhost:3000/upload/audio
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="file"; filename="audio.mp3"
+Content-Type: audio/mpeg
+
+<conteúdo binário do arquivo .mp3>
+------WebKitFormBoundary7MA4YWxkTrZu0gW--
+
+### Exemplo de resposta (sucesso)
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "key": "nome_gerado_aleatoriamente_audio.mp3",
+  "url": "https://<bucket-url>/nome_gerado_aleatoriamente_audio.mp3",
+  "bucket": "",
+  "contentType": "audio/mpeg"
+}
+
+### Exemplo de resposta (erro - arquivo inválido)
+HTTP/1.1 400 Bad Request
+Content-Type: application/json
+
+{
+  "statusCode": 400,
+  "message": "Arquivo .MP3 invalido"
+}
