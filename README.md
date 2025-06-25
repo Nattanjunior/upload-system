@@ -141,8 +141,6 @@ Content-Type: audio/mpeg
 - Para produção, configure corretamente as variáveis de ambiente e buckets do Supabase.
 - Sinta-se à vontade para contribuir ou adaptar para outros tipos de arquivos.
 
----
 
-## Contato
 
-Dúvidas ou sugestões? Abra uma issue ou entre em contato pelo repositório.
+
