@@ -114,6 +114,23 @@ Este projeto é uma API para upload de arquivos de áudio (MP3), construída com
 - **Supertest:** Testes HTTP automatizados.
 - **Multer:** Middleware para upload de arquivos.
 - **dotenv:** Gerenciamento de variáveis de ambiente.
+- **Swagger:** Documentação interativa da API.
+
+---
+
+## Documentação da API
+
+A API possui documentação interativa gerada pelo Swagger, disponível em:
+
+**http://localhost:3000/docs**
+
+> **Nota:** A documentação estará disponível quando a aplicação estiver rodando localmente.
+
+A documentação inclui:
+- Todos os endpoints disponíveis
+- Parâmetros de entrada e saída
+- Exemplos de requisição e resposta
+- Testes interativos dos endpoints
 
 ---
 
